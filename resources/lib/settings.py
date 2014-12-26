@@ -20,6 +20,7 @@ class settings():
     self.group_id              = int(__addon__.getSetting("group_id"))
     self.misc_initialflash     = __addon__.getSetting("misc_initialflash") == "true"
     self.misc_disableshort     = __addon__.getSetting("misc_disableshort") == "true"
+    self.misc_shortlength      = int(int(__addon__.getSetting("misc_shortlength").split(".")[0])*60)
 
     self.dimmed_bri            = int(int(__addon__.getSetting("dimmed_bri").split(".")[0])*254/100)
     self.override_undim_bri    = __addon__.getSetting("override_undim_bri") == "true"
@@ -56,6 +57,7 @@ class settings():
     'group_id: %s\n' % str(self.group_id) + \
     'misc_initialflash: %s\n' % str(self.misc_initialflash) + \
     'misc_disableshort: %s\n' % str(self.misc_disableshort) + \
+    'misc_shortlength: %s\n' % str(self.misc_shortlength) + \
     'dimmed_bri: %s\n' % str(self.dimmed_bri) + \
     'undim_bri: %s\n' % str(self.undim_bri) + \
     'dimmed_hue: %s\n' % str(self.dimmed_hue) + \

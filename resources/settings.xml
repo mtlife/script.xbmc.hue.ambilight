@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
+    <category label="400">
+        <setting type="lsep" label="401" />
+        <setting id="misc_initialflash" type="bool" label="411" default="true" />
+        <setting id="misc_disableshort" type="bool" label="412" default="false" />
+        <setting id="misc_shortlength" type="slider" label="416" default="10" range="3,1,60" option="ínt" enable="gt(-1,0)" visible="gt(-1,0)" />
+    </category>
     <category label="100">
         <setting type="lsep" label="100" />
         <setting id="discover_bridge" type="action" label="101" action="RunScript(script.xbmc.hue.ambilight,action=discover)" />
@@ -14,9 +20,6 @@
         <setting id="light3_id" type="number" label="308" default="3" enable="gt(-3,2)" visible="gt(-3,2)" />
         <setting id="group_id" type="number" label="309" default="0" visible ="eq(-4,0)" enable="eq(-4,0)" />
         <setting id="ambilight_info" type="action" label="310" visible="eq(-5,0) + eq(-7,0)" />
-        <setting type="lsep" label="400" />
-        <setting id="misc_initialflash" type="bool" label="401" default="true" />
-        <setting id="misc_disableshort" type="bool" label="402" default="false" />
     </category>
     <category label="500">
         <setting type="lsep" label="510" />

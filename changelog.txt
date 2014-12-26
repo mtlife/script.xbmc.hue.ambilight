@@ -1,3 +1,10 @@
+Roadmap
+ - Fast scene detection
+ - Smooth transition aka;
+    - only transition color if the color is different enough
+    - if fast scene detection is on then if it's a fast scene make the transition faster
+ - brightness change on/off
+
 0.6.2
  - [feature] optionally disable add-on for short movies
  - [feature] Full color support for LightStrips and Bloom Friends of hue

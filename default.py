@@ -408,7 +408,7 @@ def fade_light_hsv(light, hsvRatio):
 
 def state_changed(state, duration):
   logger.debuglog("state changed to: %s" % state)
-  if duration < 300 and hue.settings.misc_disableshort:
+  if hue.settings.misc_disableshort and duration < hue.settings.misc_shortlength:
     logger.debuglog("add-on disabled for short movies")
     return
 
