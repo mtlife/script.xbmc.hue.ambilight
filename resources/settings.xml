@@ -4,7 +4,7 @@
         <setting type="lsep" label="401" />
         <setting id="misc_initialflash" type="bool" label="411" default="true" />
         <setting id="misc_disableshort" type="bool" label="412" default="false" />
-        <setting id="misc_shortlength" type="slider" label="416" default="10" range="3,1,60" option="ínt" enable="gt(-1,0)" visible="gt(-1,0)" />
+        <setting id="misc_shortlength" type="slider" label="416" default="10" range="3,1,60" option="ínt" enable="eq(-1,true)" visible="eq(-1,true)" />
     </category>
     <category label="100">
         <setting type="lsep" label="100" />
@@ -34,7 +34,7 @@
         <setting id="ambilight_dim" type="bool" label="601" default="false" />
         <setting id="ambilight_dim_group" type="number" label="602" default="0" enable="eq(-1,true)" visible="eq(-1,true)" />
         <setting type="sep" label="600" />
-        <setting id="ambilight_min" label="603" type="slider" default="0" range="0,5,100" option="int" />
+        <setting id="ambilight_min" label="603" type="slider" default="10" range="0,5,100" option="int" />
         <setting id="ambilight_max" label="604" type="slider" default="90" range="0,5,100" option="int" />
         <setting type="sep" label="600" />
         <setting id="color_bias" label="605" type="slider" default="18" range="6,3,36" option="int" />
