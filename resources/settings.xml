@@ -4,7 +4,7 @@
         <setting type="lsep" label="401" />
         <setting id="misc_initialflash" type="bool" label="411" default="true" />
         <setting id="misc_disableshort" type="bool" label="412" default="false" />
-        <setting id="misc_shortlength" type="slider" label="416" default="10" range="3,1,60" option="ínt" enable="eq(-1,true)" visible="eq(-1,true)" />
+        <setting id="misc_shortlength" type="slider" label="416" default="10" range="3,1,60" enable="eq(-1,true)" visible="eq(-1,true)" option="ínt" />
     </category>
     <category label="100">
         <setting type="lsep" label="100" />
